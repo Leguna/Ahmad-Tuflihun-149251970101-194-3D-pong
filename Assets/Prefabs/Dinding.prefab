@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8226259120459824120}
   - component: {fileID: 8226259120459823879}
   m_Layer: 0
-  m_Name: DindingKanan
+  m_Name: Dinding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8226259120459823877}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c4004e65095e2dc4ea3d6d8f2bcdc9af, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
