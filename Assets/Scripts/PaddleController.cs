@@ -34,7 +34,7 @@ public class PaddleController : MonoBehaviour
     {
         if (Input.GetKey(leftKey))
         {
-            float transformLocal = (isVertical ? transform.position.z : transform.position.x) * (isReverse?-1:1);
+            float transformLocal = (isVertical ? transform.position.z : transform.position.x) * (isReverse ? -1 : 1);
             float limitLeft = (isVertical ? limitMoveMin.z : limitMoveMin.x);
             if (transformLocal >= limitLeft)
             {
@@ -56,4 +56,9 @@ public class PaddleController : MonoBehaviour
 
     private void MoveObject(Vector3 movement) => rig.position += movement * Time.deltaTime;
 
+
+    public void DisablePlayer()
+    {
+        gameObject.SetActive(false);
+    }
 }

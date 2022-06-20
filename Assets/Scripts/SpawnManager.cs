@@ -7,6 +7,8 @@ public class SpawnManager : MonoBehaviour
     public float cooldownSpeed = 1;
     public int maxBall = 3;
 
+    public ScoreManager scoreManager;
+
     public GameObject parent;
     public GameObject ball;
     public float force = 100;
@@ -36,11 +38,12 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnBall(GameObject ball)
     {
-        GameObject spawnPosition = GetRandomSpawner();
+        GameObject spawnerObject = GetRandomSpawner();
         float randomDiff = Random.Range(-0.5f, 0.5f);
-        print(randomDiff);
-        GameObject spawnedBall = Instantiate(ball, spawnPosition.transform.position, transform.rotation * Quaternion.Euler( spawnPosition.transform.eulerAngles), parent.transform);
+        GameObject spawnedBall = Instantiate(ball, spawnerObject.transform.position, transform.rotation * Quaternion.Euler( spawnerObject.transform.eulerAngles), parent.transform);
         spawnedBall.GetComponent<Rigidbody>().AddForce((spawnedBall.transform.forward+(spawnedBall.transform.right*randomDiff))* force);
+        spawnedBall.GetComponent<BallController>().spawnManager = this;
+        spawnedBall.GetComponent<BallController>().scoreManager = scoreManager;
         listBall.Add(spawnedBall);
     }
 
@@ -48,5 +51,10 @@ public class SpawnManager : MonoBehaviour
     {
         int randomIndex = Random.Range(0, listSpawner.Count);
         return listSpawner[randomIndex];
+    }
+
+    public void RemoveBall(GameObject ball)
+    {
+        listBall.Remove(ball);
     }
 }

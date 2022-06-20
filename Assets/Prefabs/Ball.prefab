@@ -125,3 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af3b44cfad9ef4686ea7d2cc777094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onGoalTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  spawnManager: {fileID: 0}
