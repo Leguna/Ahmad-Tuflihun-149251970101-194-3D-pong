@@ -23,4 +23,10 @@ public class GameManager : MonoBehaviour
         scoreUI.SetActive(false);
         winnerText.text = "Player " + (playerIndex+1).ToString() + " Win";
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }
