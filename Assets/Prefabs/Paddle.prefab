@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6924067776048409578}
   - component: {fileID: 6924067776048409577}
   - component: {fileID: 9071742705613884715}
-  - component: {fileID: -8473844853381164276}
+  - component: {fileID: 2380753562490928048}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Player
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 86a30b78c29833a4b822f1f0902f2b93, type: 2}
+  - {fileID: 2100000, guid: deb15130b1852fc47993c463b8aff4e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,7 +91,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6924067776048409583}
-  m_Material: {fileID: 13400000, guid: c4004e65095e2dc4ea3d6d8f2bcdc9af, type: 2}
+  m_Material: {fileID: 13400000, guid: 11123efb6faecd743bb46936dcb92461, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &-8473844853381164276
+--- !u!114 &2380753562490928048
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,14 +122,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6924067776048409583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4af0a89777c12441b4f515265bd8ae1, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c50441895347b44eb76c409e91ae7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  leftKey: 0
-  rightKey: 0
+  leftKey: 97
+  rightKey: 100
   isReverse: 0
   isVertical: 0
   playerType: 0
-  limitMoveMin: {x: 0, y: 0, z: 0}
-  limitMoveMax: {x: 0, y: 0, z: 0}
+  limitMoveMin: {x: -4, y: 0, z: 0}
+  limitMoveMax: {x: 4, y: 0, z: 0}

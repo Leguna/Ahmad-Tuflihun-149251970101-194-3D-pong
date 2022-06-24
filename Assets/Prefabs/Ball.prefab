@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0725014ab9fe0944bad16a2144971a4f, type: 2}
+  - {fileID: 2100000, guid: 1aa8962bc087fab47bbd31e9f5a24e56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,7 +91,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6813687914988365779}
-  m_Material: {fileID: 13400000, guid: c4004e65095e2dc4ea3d6d8f2bcdc9af, type: 2}
+  m_Material: {fileID: 13400000, guid: 11123efb6faecd743bb46936dcb92461, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -122,10 +122,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6813687914988365779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43af3b44cfad9ef4686ea7d2cc777094, type: 3}
+  m_Script: {fileID: 11500000, guid: 867581d770f350d479cf418c081a16a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onGoalTrigger:
-    m_PersistentCalls:
-      m_Calls: []
   spawnManager: {fileID: 0}
+  scoreManager: {fileID: 0}

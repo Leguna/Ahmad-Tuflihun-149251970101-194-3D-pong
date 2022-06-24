@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject parent;
     public GameObject ball;
-    public float force = 100;
+    public float force = 400;
     public List<GameObject> listSpawner;
     public List<GameObject> listBall;
 
