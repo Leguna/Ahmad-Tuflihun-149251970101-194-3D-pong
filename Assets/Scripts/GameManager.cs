@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public TMPro.TMP_Text winnerText;
     public GameObject scoreUI;
 
+    public bool isGameOver = false;
+
     public void GoToMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
         gameOverUI.SetActive(true);
         scoreUI.SetActive(false);
         winnerText.text = "Player " + (playerIndex+1).ToString() + " Win";
+        isGameOver = true;
     }
 
     public void ExitGame()

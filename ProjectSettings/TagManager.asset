@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Pole
   - Dinding
+  - Arena
   layers:
   - Default
   - TransparentFX

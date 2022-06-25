@@ -131,5 +131,5 @@ MonoBehaviour:
   isReverse: 0
   isVertical: 0
   playerType: 0
-  limitMoveMin: {x: -4, y: 0, z: 0}
-  limitMoveMax: {x: 4, y: 0, z: 0}
+  limitMoveMin: {x: -4, y: 0, z: -4}
+  limitMoveMax: {x: 4, y: 0, z: 4}

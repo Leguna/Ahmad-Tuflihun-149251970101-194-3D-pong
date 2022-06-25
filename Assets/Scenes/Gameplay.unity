@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44144428, g: 0.49028563, b: 0.57031226, a: 1}
+  m_IndirectSpecularColor: {r: 0.17639214, g: 0.22077535, b: 0.30309296, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -534,7 +534,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -580,6 +580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 7257245386983969386, guid: 5494727787b53df47980af962d8dff0b, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5494727787b53df47980af962d8dff0b, type: 3}
 --- !u!4 &184310206 stripped
@@ -614,7 +618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198933722}
   m_LocalRotation: {x: -0.7071066, y: -0, z: -0, w: 0.707107}
-  m_LocalPosition: {x: 0, y: -0.55, z: 11.91}
+  m_LocalPosition: {x: 0, y: -0.55, z: 12.59}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 812753773}
@@ -1805,7 +1809,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1850,6 +1854,10 @@ PrefabInstance:
     - target: {fileID: 7257245386983969386, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_Name
       value: Spawner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257245386983969386, guid: 5494727787b53df47980af962d8dff0b, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5494727787b53df47980af962d8dff0b, type: 3}
@@ -2324,6 +2332,7 @@ MonoBehaviour:
   gameOverUI: {fileID: 1499571516}
   winnerText: {fileID: 1480616218}
   scoreUI: {fileID: 951399937}
+  isGameOver: 0
 --- !u!1 &841397351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,6 +2719,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2782,6 +2792,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 31.51, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: 0
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &991912291
 GameObject:
   m_ObjectHideFlags: 0
@@ -3022,6 +3065,7 @@ MonoBehaviour:
   - {fileID: 1608726765}
   - {fileID: 1774966868}
   listBall: []
+  gameManager: {fileID: 831696363}
 --- !u!1 &1130656887
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,7 +3080,7 @@ GameObject:
   - component: {fileID: 1130656889}
   m_Layer: 0
   m_Name: ArenaFloor
-  m_TagString: Untagged
+  m_TagString: Arena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3459,7 +3503,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3504,6 +3548,10 @@ PrefabInstance:
     - target: {fileID: 7257245386983969386, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_Name
       value: Spawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257245386983969386, guid: 5494727787b53df47980af962d8dff0b, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5494727787b53df47980af962d8dff0b, type: 3}
@@ -3830,7 +3878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566042885}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.55, z: 0}
+  m_LocalPosition: {x: 0.06, y: -0.55, z: 0.01}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 600883540}
@@ -4183,7 +4231,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7257245386983969381, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4228,6 +4276,10 @@ PrefabInstance:
     - target: {fileID: 7257245386983969386, guid: 5494727787b53df47980af962d8dff0b, type: 3}
       propertyPath: m_Name
       value: Spawner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257245386983969386, guid: 5494727787b53df47980af962d8dff0b, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5494727787b53df47980af962d8dff0b, type: 3}

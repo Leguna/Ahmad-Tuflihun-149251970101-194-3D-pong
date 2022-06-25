@@ -15,6 +15,7 @@ public class SpawnManager : MonoBehaviour
     public List<GameObject> listSpawner;
     public List<GameObject> listBall;
 
+    public GameManager gameManager;
     private float timer = 0;
 
     private void Start()
@@ -29,7 +30,7 @@ public class SpawnManager : MonoBehaviour
         if (timer <= 0)
         {
             timer = cooldownSpawnBall;
-            if (listBall.Count<maxBall)
+            if (listBall.Count<maxBall && !gameManager.isGameOver)
             {
                 SpawnBall(ball);
             }
