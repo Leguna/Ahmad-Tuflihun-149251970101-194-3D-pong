@@ -130,8 +130,8 @@ MonoBehaviour:
   spawnManager: {fileID: 0}
   scoreManager: {fileID: 0}
   audioSource: {fileID: 4955464199458998571}
-  smokeParticle: {fileID: 958800534318925429, guid: 6af594ec822b0d841896bd627ba57625, type: 3}
-  sparkleParticle: {fileID: 6414825715766418841, guid: baf9b3cbc1b6f6b43b56f9385a79686f, type: 3}
+  smokeParticle: {fileID: 958800534318925429, guid: 6f6899f97e25c92449fdaf92fcc8918d, type: 3}
+  sparkleParticle: {fileID: 6414825715766418841, guid: b20ae74182b234c40bc2e9d3ed2e7e47, type: 3}
 --- !u!82 &4252912837763580982
 AudioSource:
   m_ObjectHideFlags: 0
