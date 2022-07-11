@@ -1,0 +1,15 @@
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\bin\Debug\net6.0\TestConsoleApp.exe
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\bin\Debug\net6.0\TestConsoleApp.deps.json
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\bin\Debug\net6.0\TestConsoleApp.runtimeconfig.json
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\bin\Debug\net6.0\TestConsoleApp.dll
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\bin\Debug\net6.0\TestConsoleApp.pdb
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.csproj.AssemblyReference.cache
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.AssemblyInfoInputs.cache
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.AssemblyInfo.cs
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.csproj.CoreCompileInputs.cache
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.dll
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\refint\TestConsoleApp.dll
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.pdb
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\TestConsoleApp.genruntimeconfig.cache
+D:\GithubDesktop\AndroidProjects\Ahmad-Tuflihun-149251970101-194-3D-pong\TestConsoleApp\obj\Debug\net6.0\ref\TestConsoleApp.dll
